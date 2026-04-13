@@ -17,7 +17,7 @@ export interface Question {
   id: string;
   question: string;
   image?: string;           // path relative to /public, e.g. "/images/stop-sign.svg"
-  choices: [Choice, Choice, Choice];
-  answer: 0 | 1 | 2;
+  choices: Choice[];
+  answer: number;
   explanation?: string;
 }
